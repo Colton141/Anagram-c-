@@ -29,7 +29,7 @@ namespace Anagram.Models
       _instances.Clear();
     }
 
-    public static bool IsThereAnAnagram(string word,   string check)
+    public static string IsThereAnAnagram(string word,   string check)
     {
       char[] wordArray = word.ToCharArray();
       char[] checkArray = check.ToCharArray();
@@ -42,10 +42,10 @@ namespace Anagram.Models
 
         if (wordString == checkString)
         {
-          return true;
+          return "an anagram";
         }
         else {
-          return false;
+          return "not an anagram";
         }
 
     }

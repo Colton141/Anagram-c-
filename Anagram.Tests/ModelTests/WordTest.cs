@@ -30,19 +30,19 @@ namespace Anagram.Tests
       Assert.AreEqual (true, Word.IsThereAnAnagram("bread", "beard"));
     }
 
-    // [TestMethod]
-    // public void IsThereAnAnagram_GetWordThatMatches_False()
-    // {
-    //   //Arrange
-    //   Word newWord = new Word ("test");
-    //
-    //   //Act
-    //   // string output = newWord.IsThereAnAnagram();
-    //
-    //   //Assert
-    //
-    //   Assert.AreEqual (true, Word.IsThereAnAnagram("bread", "beard"));
-    // }
+    [TestMethod]
+    public void IsThereAnAnagram_GetWordThatDoesntMatch_True()
+    {
+      //Arrange
+      Word newWord = new Word ("test");
+
+      //Act
+      // string output = newWord.IsThereAnAnagram();
+
+      //Assert
+
+      Assert.AreEqual (true, Word.IsThereAnAnagram("bread", "dddod"));
+    }
 
 
 
